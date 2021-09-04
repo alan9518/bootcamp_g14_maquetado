@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    width: 100%;
+    border: 5px solid #000;
+    background-color: #ededed;
+    padding: 10px;
+    max-width: 1000px;
+}
+
+.flex-item {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    border: 1px solid #000;
+    color: #fff;
+    text-align: center;
+    line-height: 75px;
+    background-color: #e67e22;
+}
+
+
+/* FLEX */
+
+.flex-container {
+    display: flex;
+    /** direction */
+    flex-direction: row;
+    /* flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse; */
+    /** order of items, show several items */
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    flex-flow: row wrap;
+    /** align items, either row or col */
+    justify-content: center;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    /** Mostrar Height cambios */
+    height: 400px;
+    align-items: center;
+    /* align-items: flex-start;
+    align-items: flex-end;
+    align-items: baseline; */
+    /** Mostrar align content con varios items  */
+    width: 700px;
+    align-items: unset;
+    align-content: stretch;
+}
+
+.flex-item {
+    /** Mostrar Height cambios */
+    height: auto;
+}
+
+
+/** Propiedades de elementos hijos  */
+
+#caja1 {
+    background-color: rgb(59, 35, 3);
+    order: 1;
+    flex-grow: 1;
+}
+
+#caja2 {
+    background-color: turquoise;
+    order: 4;
+    flex-grow: 2;
+}
+
+#caja3 {
+    background-color: burlywood;
+    order: 3;
+    flex-grow: 2;
+}
+
+#caja4 {
+    background-color: green;
+    order: 2;
+    flex-grow: 2;
+}
+
+
+/** col */
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.col1 {
+    flex-grow: 2;
+    background-color: #fff;
+}
+
+.sidebar {
+    flex-grow: 1;
+    background-color: #000;
+}
