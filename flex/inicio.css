@@ -1,3 +1,21 @@
+/* ==========================================================================
+** Esta es la definicion de flex
+** 06/09/2021
+** Alan Medina Silva
+** ========================================================================== */
+
+
+/* resetear estilos del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* Caja contenedora */
+
 .flex-container {
     max-width: 600px;
     min-height: 200px;
@@ -24,29 +42,16 @@
 /* directions */
 
 .flex-container {
+    /** agregar propiedad de flex al elemento */
     display: flex;
-    /* flex-direction: row-reverse;
+    /* * definiir la dirección de flex row => horizontal, col => vertical*/
+    flex-direction: row-reverse;
     flex-direction: column;
-    flex-direction: column-reverse; */
-    /* flex-direction: row; */
-    /* flex-direction: row-reverse;
-    flex-direction: column;
-    flex-direction: column-reverse; */
-    /* flex-wrap: wrap;
-    flex-wrap: wrap-reverse; */
-    /* flex-flow: row wrap; */
-    /* justify-content: space-between;
-    align-items: baseline; */
-    /* * multiple rows */
-    /* flex-wrap: wrap;
+    flex-direction: column-reverse;
+    flex-direction: row;
+    /* * Si los hijos del elemento se salen del contenedor, con wrap, se convierten en otras filas para que quepan */
+    flex-wrap: wrap;
     justify-content: flex-start;
-    align-content: flex-end; */
-    /* justify-content: flex-start;
-    justify-content: flex-end;
-    justify-content: center;
-    justify-content: space-around;
-    justify-content: space-between;
-    justify-content: space-evenly; */
     justify-content: space-evenly;
     align-items: center;
     align-items: stretch;
@@ -54,6 +59,9 @@
     /* flex-wrap: wrap; */
     flex-flow: row wrap;
 }
+
+
+/* Cajas hijo de flex */
 
 #flex-item-1 {
     background-color: red;
@@ -93,7 +101,7 @@
 }
 
 
-/* Ejes */
+/* Ejes para el contenedor de flex, esto no es importante para la tarea */
 
 .axis {
     position: absolute;
@@ -136,15 +144,10 @@
     color: blue;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-}
+/* Aqui terminan los Ejes para el contenedor de flex, esto no es importante para la tarea */
 
 
-/* navbar */
+/* navbar  con flex*/
 
 .container {
     display: flex;
@@ -165,6 +168,7 @@
 
 /* Dummy Test Netflix */
 
+/* Poner imagen de fondo, usar la que les pase por slack, es de mejor calidad */
 .bg {
     background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/5a27cb25-33a9-4bcc-b441-95fefabcbd37/18ac9873-558c-49b8-8ae5-eb42c9da346a/MX-es-20210823-popsignuptwoweeks-perspective_alpha_website_small.jpg');
     min-height: 450px;
@@ -173,6 +177,7 @@
     background-position: center;
 }
 
+/* FLEX Column */
 .bg .col {
     display: flex;
     flex-direction: column;
