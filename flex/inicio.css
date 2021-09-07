@@ -1,0 +1,192 @@
+.flex-container {
+    max-width: 600px;
+    min-height: 200px;
+    display: flex;
+    background-color: #e3e3e3;
+    position: relative;
+    border: 2px solid #000;
+    margin: 20px;
+}
+
+.flex-item {
+    width: 50px;
+    /* height: 50px; */
+    /* height: 50px;  Mostrar altua stretch */
+    line-height: 50px;
+    background-color: #E67E22;
+    color: #fff;
+    margin: 10px;
+    border: 2px solid #000;
+    text-align: center;
+}
+
+
+/* directions */
+
+.flex-container {
+    display: flex;
+    /* flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse; */
+    /* flex-wrap: wrap;
+    flex-wrap: wrap-reverse; */
+    /* flex-flow: row wrap; */
+    /* justify-content: space-between;
+    align-items: baseline; */
+    /* * multiple rows */
+    /* flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-end; */
+    /* justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly; */
+    justify-content: space-evenly;
+    align-items: center;
+    align-items: stretch;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+}
+
+#flex-item-1 {
+    background-color: red;
+    order: 1;
+    flex: 1;
+    /* flex-grow: 1; */
+    /* flex: 1 1 200; */
+    /* min-width: 590px; */
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#flex-item-2 {
+    background-color: blue;
+    order: 2;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+#flex-item-3 {
+    background-color: orange;
+    order: 3;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+#flex-item-4 {
+    background-color: green;
+    order: 4;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.flex-container2 {
+    flex-wrap: nowrap;
+    align-content: initial;
+}
+
+
+/* Ejes */
+
+.axis {
+    position: absolute;
+}
+
+.cross-axis {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 100%;
+    background-color: blue;
+}
+
+.main-axis {
+    top: 50%;
+    transform: translateY(-50%);
+    height: 5px;
+    width: 100%;
+    background-color: red;
+}
+
+.axis::after {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 2em;
+}
+
+.main-axis::after {
+    position: absolute;
+    content: 'Main Axis';
+    color: red;
+}
+
+.cross-axis::after {
+    white-space: nowrap;
+    content: 'Cross Axis';
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: blue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* navbar */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    border: 1px solid;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.scroll {
+    width: 150px;
+    height: 150px;
+    overflow: scroll;
+}
+
+
+/* Dummy Test Netflix */
+
+.bg {
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/5a27cb25-33a9-4bcc-b441-95fefabcbd37/18ac9873-558c-49b8-8ae5-eb42c9da346a/MX-es-20210823-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    min-height: 450px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg .col {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 100%;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlaces-container a {
+    background-color: #e50914;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+}
