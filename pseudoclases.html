@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Clases CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/pseudoclases.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1 class="titulo">Pseudo-clases</h1>
+
+
+
+        <div class="grupo">
+
+            <label for=""> selector adyacente </label>
+            <span> Selecciona la etiqueta inmediatamente despues de otra la que esta antes del signo +</span>
+
+            <!-- h1 + h2  -->
+            <h1> Titulo h1 </h1>
+            <h2> Titulo h2 </h2>
+            <h2> titulo h2 2 </h2>
+
+            <div>
+                <h1> contenedor titulo h1 </h1>
+                <h2> yo recibo estilos </h2>
+            </div>
+
+            <!-- <div class="parrafos">
+                <h1>Tituo principal</h1>
+                <h2>Subtitulo</h2>
+
+                <div class="inner">
+                    <a href="#" class="enlace">enlace</a>
+                    <p>parrafo</p>
+                </div>
+            </div> -->
+
+
+        </div>
+
+
+        <div class="grupo">
+
+            <label for=""> selector hijo </label>
+            <div class="parrafos">
+                <p>
+                    <span> Span Hijo de un P </span>
+                    <h2>
+                        <span>asdasdasd</span>
+                    </h2>
+
+                    <p class="demo">
+                        <span>sub hijo</span>
+                        <h2></h2>
+                        <p>
+                            <span>dasdasdasdasd</span>
+                        </p>
+                    </p>
+                </p>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="grupo hermano">
+            <label for=""> selector hermano </label>
+            <span>
+				Busca el elemento antes de la virgulilla ~ 
+				y apartir de ahi busca el segundo para aplicar los estilos
+			</span>
+            <p>uno</p>
+            <h2 class="hermano2">dos</h2>
+            <span>tres</span>
+            <p>cuatro</p>
+            <div>cinco</div>
+            <p>cuatro</p>
+            <p>cuatro</p>
+            <p>cuatro</p>
+            <p>cuatro</p>
+            <p class="hermano2">cuatro</p>
+            <div>
+                <span> hijo</span>
+            </div>
+
+
+        </div>
+
+
+        <div class="grupo hermano">
+            <label for=""> selector de atributo </label>
+            <p>uno</p>
+            <h2>dos</h2>
+            <span>tres</span>
+            <p>cuatro</p>
+            <div>cinco</div>
+            <p>cuatro</p>
+            <p>cuatro</p>
+            <h2 id="titulo"> titulo con id</h2>
+
+            <div>yo debo cambiar</div>
+        </div>
+
+
+
+
+
+        <div class="grupo">
+            <label>:active / :link / :visited / :hover</label>
+            <a class="enlace" href="#">Ir a página web!</a>
+            <a class="enlace" href="https://www.google.com">Ir a Google!</a>
+            <a class="enlace" href="https://www.gmail.com"> ir a gmail </a>
+            <a class="enlace" href="https://www.gmail2.com"> ir a gmail </a>
+            <a class="enlace" href="https://www.gmail3.com"> ir a gmail </a>
+
+            <button>text</button>
+        </div>
+
+
+        <div class="grupo">
+            <label>:first-child / :last-child</label>
+            <div class="parrafos">
+                <p>Soy el primer parrafo!</p>
+                <p>Soy el segundo parrafo!</p>
+                <p>Soy el tercer parrafo!</p>
+            </div>
+        </div>
+
+
+        <div class="grupo">
+            <label>:first-of-type / :last-of-type</label>
+            <div class="elementos">
+                <div>Hola soy un div!</div>
+                <p>Hola soy un parrafo!</p>
+                <span>Hola soy un span!</span>
+
+                <p>Hola soy otro parrafo!</p>
+                <div>Hola soy otro div!</div>
+            </div>
+        </div>
+
+
+        <div class="grupo">
+            <label>:nth-child() / :nth-last-child</label>
+            <ul class="lista">
+                <li>Soy la opción #1</li>
+                <li>Soy la opción #2</li>
+                <li>Soy la opción #3</li>
+                <li>Soy la opción #4</li>
+                <li>Soy la opción #5</li>
+                <li>Soy la opción #6</li>
+                <li>Soy la opción #7</li>
+                <li>Soy la opción #8</li>
+            </ul>
+        </div>
+
+
+        <div class="grupo">
+            <label>:nth-of-type() / :nth-last-of-type()</label>
+            <div class="lista2">
+                <div>Hola soy un div!</div>
+                <p>Hola soy un parrafo!</p>
+                <p>Hola soy otro parrafo!</p>
+                <span>Hola soy un span!</span>
+                <p>Hola soy otro parrafo!</p>
+                <div>Hola soy otro div!</div>
+            </div>
+        </div>
+
+
+        <div class="grupo">
+            <label>:only-child</label>
+            <div class="lista3">
+                <p>Hola, soy el unico hijo de esta lista!</p>
+            </div>
+        </div>
+
+
+        <div class="grupo">
+            <label>:only-of-type</label>
+            <div class="lista4">
+                <div>Hoy, soy un div.</div>
+                <p>Hola, soy el unico parrafo de esta lista!</p>
+                <div>Hoy, soy un div.</div>
+                <div>Hoy, soy un div.</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
