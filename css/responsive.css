@@ -1,0 +1,96 @@
+/* Definir mis estilos responsivos */
+
+
+/* Estilos para mobile small*/
+
+@media (min-width:320px) and (max-width:480px) {
+    nav.site-navigation {
+        padding: 15px 3px 15px 15px;
+    }
+    .svg-icon-netflix-logo {
+        width: 85px;
+    }
+    .sign-container {
+        width: 90%;
+    }
+    a.language-button,
+    .button-login.red-button {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    .hero-title {
+        font-size: 1.5em;
+    }
+    .hero-subtitle {
+        font-size: 1em;
+    }
+    .hero-text {
+        font-size: 1em;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    input.sign-input {
+        min-width: unset;
+        height: auto;
+        padding: 12px 5px;
+        font-size: 1em;
+        width: 100%;
+    }
+    .sign-in-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sign-in-container form {
+        display: block;
+    }
+    button.sign-in-button {
+        min-width: unset;
+        height: auto;
+        padding: 5px;
+        /* font-weight: 300; */
+    }
+    button.sign-in-button span {
+        font-size: .9em;
+        font-weight: 400;
+    }
+    .article-text {
+        width: 100%;
+        padding: 0;
+    }
+    h2.section-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    img.our-story-card-img {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    h4.section-desc {
+        text-align: center;
+        font-size: 1em;
+    }
+    img.mobile-img {
+        max-width: 460px;
+        max-width: 100%;
+    }
+}
+
+
+/* estilos para tablet/ipad */
+
+@media (min-width:720px) and (max-width:1200px) {
+    body {
+        background: red;
+    }
+}
+
+
+/* 
+    padding, margin, border-radius
+    12, 123123, 100, 50 -> especifica
+    10, 10, 10 
+    10, 10 -> primera = vertical (arriba y abajo), segunda = horizontal (izq y derecha)
+    10 -> general 
+ */
