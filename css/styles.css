@@ -310,10 +310,6 @@ button.sign-in-button span i {
 .article-text {
     width: 48%;
     height: 100%;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 auto;
-    -moz-box-flex: 0;
-    -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     padding: 0 3rem 0 0;
     z-index: 3;
@@ -344,6 +340,85 @@ img.our-story-card-img {
 
 img.mobile-img {
     max-width: 460px;
+}
+
+.our-story-card-animation-container {
+    overflow: hidden;
+    position: relative;
+}
+
+img.our-story-card-img {
+    max-width: 500px;
+    z-index: 1000000;
+    position: relative;
+    z-index: 2;
+    height: auto;
+    border: 0;
+}
+
+.our-story-card-animation {
+    width: 100%;
+    height: 100%;
+    max-width: 81%;
+    max-height: 54%;
+    position: absolute;
+    top: 47%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.our-story-card-animation.watchOnDevice {
+    top: 34%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    position: absolute;
+    top: 34%;
+}
+
+video.our-story-card-video {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.our-story-card-animation-image.downloadAndWatch {
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    margin: 0 auto;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    min-width: 15em;
+    padding: .25em .65em;
+    border: 2px solid rgba(255, 255, 255, .25);
+    box-shadow: 0 0 2em 0 #000;
+    border-radius: .75em;
+    transform: translateX(-50%);
+}
+
+.mini-img {
+    width: 50px;
+}
+
+.our-story-card-animation-text {
+    font-size: 1em;
+}
+
+.our-story-card-animation-text .text-0 {
+    font-weight: 600;
+}
+
+.our-story-card-animation-text .text-1 {
+    color: #0071eb;
+    font-size: 1em;
 }
 
 
