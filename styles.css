@@ -1,8 +1,8 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 body {
     font-family: sans-serif;
@@ -14,8 +14,8 @@ h3,
 p,
 a,
 span {
-    background: #000;
-    color: #fff;
+    /* background: #000; */
+    /* color: #fff; */
     /* margin */
 }
 
@@ -25,9 +25,17 @@ h2 {
 
 a,
 span {
+    /* height: 250px; */
+    /* padding: 70px; */
     /* height: 200px; */
     /* padding: 100px; */
     /* width: 200px; */
+    /* display: block; */
+}
+
+p {
+    padding: 50px;
+    /* margin: 20px; */
 }
 
 .separator {
@@ -35,47 +43,63 @@ span {
     width: 100%;
 }
 
+
+/* Posicionamiento */
+
+
+/* 
+    relative
+    absolute
+    fixed
+    static
+    sticky
+*/
+
 .caja {
     background: #4A88F4;
-    width: 100px;
-    height: 100px;
-    margin: 20px;
+    width: 200px;
+    height: 200px;
+    /* margin: 20px; */
     color: #fff;
     text-align: center;
     font-size: 30px;
     line-height: 100px;
 }
 
-.cajaPadre {
+.padre {
     position: relative;
 }
 
 .cajaRelativa {
-    /* position: static; */
     position: relative;
+    /* bottom: 0; */
+    /* left: auto; */
+    /* position: relative; */
     /* top: 20px; */
     /* left: 100px;
     bottom: 200px;
     right: 2000px; */
 }
 
-
-/* .cajaAbsoluta {
+.cajaAbsoluta {
     position: absolute;
-    top: 0;
+    top: 0px;
+    left: 0px;
 }
 
 .cajaFija {
     position: fixed;
-    top: 200px;
-    left: 250px;
+    top: 100px;
+    left: 50px;
 }
 
 .cajaSticky {
     position: sticky;
-    top: 200px;
-    left: 500px;
-} */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
 
 
 /* ==========================================================================
@@ -90,16 +114,61 @@ span {
 }
 
 .transition-container .caja {
-    /* transition: all 1.9s ease; */
-    /* transition-property: border-radius, transform;
+    /*transition: all 1.9s ease;
+    */
+    /*transition-property: border-radius, transform;
     transition-duration: 1.5s;
     transition-timing-function: linear;
-    transition-delay: 1s; */
-    /* transition: border-radius, transform 1.5s linear; */
-    transition: border-radius 2s, transform 1.5s ease;
+    transition-delay: 1s;
+    */
+    /*transition: border-radius, transform 1.5s linear;
+    */
+    /*transition: border-radius 2s, transform 1.5s ease;
+    */
+    /* transition-property: background-image transform;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.42, -0.12, 0.35, 1.03); */
+    /*border-radius: 50%;
+    */
+    background-image: url('./clon.PNG');
+    background-size: contain;
+    transition: all 500ms cubic-bezier(0.42, -0.12, 0.35, 1.03);
 }
 
+
+/* .transition-container .caja:hover {
+    border-radius: 50%;
+} */
+
 .transition-container:hover .caja {
+    /* border-radius: 0%; */
+    /* background: red; */
+    transform: translate(600px);
+    background-image: url('./537-5374089_react-js-logo-clipart.png');
+    background-size: contain;
+}
+
+
+/* .transition-container:hover .caja {
     border-radius: 50%;
     transform: translate(600px);
+    -webkit-transform: translate(600px);
+    -moz-transform: translate(600px);
+    -ms-transform: translate(600px);
+    -o-transform: translate(600px);
+} */
+
+.animate {
+    font-size: 60px;
+    text-align: center;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+.animate:hover {
+    font-size: 15px;
+    color: red;
 }
