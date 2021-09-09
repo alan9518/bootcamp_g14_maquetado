@@ -80,11 +80,12 @@
 
 /* estilos para tablet/ipad */
 
-@media (min-width:720px) and (max-width:1200px) {
+
+/* @media (min-width:720px) and (max-width:1200px) {
     body {
         background: red;
     }
-}
+} */
 
 
 /* 

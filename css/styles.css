@@ -342,7 +342,111 @@ img.mobile-img {
     max-width: 460px;
 }
 
+
+/* Section del video */
+
+
+/* Primer video */
+
 .our-story-card-animation-container {
+    overflow: hidden;
+    position: relative;
+}
+
+img.our-story-card-img {
+    max-width: 500px;
+    position: relative;
+    height: auto;
+    border: none;
+    z-index: 1;
+}
+
+.our-story-card-animation {
+    width: 100%;
+    height: 100%;
+    max-width: 81%;
+    max-height: 54%;
+    position: absolute;
+    top: 19%;
+    left: 10%;
+    /*top: 47%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    */
+    z-index: 0;
+}
+
+video.our-story-card-video {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: baseline;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+
+
+/* Primer video */
+
+
+/* imagen de stranger things */
+
+.our-story-card-animation-image.downloadAndWatch {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0 auto;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    min-width: 15em;
+    padding: .25em .65em;
+    border: 2px solid rgba(255, 255, 255, .25);
+    box-shadow: 0 0 2em 0 #000;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+.mini-img {
+    width: 50px;
+}
+
+img.loading-icon {
+    width: 70px;
+}
+
+
+/* image de stranger things */
+
+
+/* ultimo video */
+
+.our-story-card-animation.watchOnDevice {
+    width: 100%;
+    height: 100%;
+    max-width: 70%;
+    max-height: 50%;
+    position: absolute;
+    top: 7%;
+    left: 15%;
+    z-index: 0;
+}
+
+
+/* .our-story-card-animation-container {
     overflow: hidden;
     position: relative;
 }
@@ -419,7 +523,7 @@ video.our-story-card-video {
 .our-story-card-animation-text .text-1 {
     color: #0071eb;
     font-size: 1em;
-}
+} */
 
 
 /* Responsive design */
