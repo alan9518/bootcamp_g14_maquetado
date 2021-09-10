@@ -1,0 +1,114 @@
+// variables
+$bgColorBody: #ededed;
+$bodyFontSize: 40px;
+$bodyPadding: 50px;
+$navBarHeight:60px;
+$textColorBlue: blue;
+$listItemWidth: 150px;
+// Declarar variablde de sass
+// 1. Signo de dinero $
+// 2. nombre de la variable
+// 3 valor de la variable
+$nombreVariable: 50px;
+// mixins
+@mixin displayFlexCentrado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+// mixin con atributos dinamicos
+@mixin displayFlexDinamico($direction, $align, $justify, $wrap) {
+    display: flex;
+    flex-wrap: $wrap; // wrap
+    flex-direction: $direction; // row, //column
+    align-items: $align; // center
+    justify-content: $justify; // flex-start
+}
+
+@mixin estilosDeMisTitulos {
+    color: red;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: $bgColorBody;
+    // font-size: $bodyFontSize;
+}
+
+.bg {
+    background-color: #1d0b0b;
+    width: 200px;
+    // height: 400px;
+    height: 300px;
+    padding: $bodyPadding;
+}
+
+.navigation {
+    width: 100%;
+    height: $navBarHeight;
+    ul {
+        // display: flex;
+        // flex-direction: row;
+        // align-items: center;
+        // justify-content: center;
+        // @include displayFlexCentrado();
+        @include displayFlexDinamico(row, center, flex-start, nowrap);
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: $textColorBlue;
+        }
+    }
+    li {
+        width: 150px;
+        margin: 0 15px;
+    }
+}
+
+.container {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
+    // @include displayFlexCentrado();
+    @include displayFlexDinamico(column, center, center, nowrap);
+}
+
+.sectionCaja {
+    width: 70%;
+    margin-top: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    .caja {
+        min-height: 450px;
+        margin: 10px auto;
+        max-width: 50%;
+        .titulo {
+            text-align: center;
+            font-size: 20px;
+            h2 {
+                @include estilosDeMisTitulos();
+            }
+        }
+        .contenido {
+            text-align: center;
+        }
+        .enlaces {
+            width: 100%;
+            text-align: center;
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: $textColorBlue;
+            }
+        }
+        h3 {
+            @include estilosDeMisTitulos();
+            color: green;
+        }
+    }
+}
