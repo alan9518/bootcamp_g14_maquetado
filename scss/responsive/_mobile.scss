@@ -1,0 +1,14 @@
+// Todos los estilos de mobile
+@media (min-width:320px) and (max-width:720px) {
+    header {
+        background-color: green;
+        .showcase-content {
+            margin-top: 40px;
+            .section-col {
+                max-width: 80%;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+}
