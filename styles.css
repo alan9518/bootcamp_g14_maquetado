@@ -1,0 +1,8 @@
+.carousel-control-next-icon {
+    background-image: url(http://lorempixel.com/50/50/);
+}
+
+ul.navbar-nav.navbar.navbar-right {
+    width: 100%;
+    justify-content: flex-end;
+}
