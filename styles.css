@@ -1,9 +1,34 @@
+/* *{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+} */
+
 .body{
-    background: gray;
+    background: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid red;
 }
 
 
 .container{
     background-color: aqua;
     border: 1px black solid;
+}
+
+.canvas-container{
+    display: inline-block;
+    width: 1400px;
+    height: 800px;
+    background-color: darkgreen;
+}
+
+.first-canvas{
+    width: 700px;
+    height: 600px;
+    border: 1px solid black;
+    background-color: transparent;
 }
