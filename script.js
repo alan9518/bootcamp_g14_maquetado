@@ -11,11 +11,26 @@ function draw(){
         // ctxCanvas1.clearRect(45, 45, 60, 60);
         // ctxCanvas1.strokeRect(50, 50, 50, 50);
 
+        // ctxCanvas1.beginPath();
+        // ctxCanvas1.moveTo(75, 50);
+        // ctxCanvas1.lineTo(100, 75);
+        // ctxCanvas1.lineTo(100, 25);
+        // ctxCanvas1.fill();
+
         ctxCanvas1.beginPath();
-        ctxCanvas1.moveTo(75, 50);
-        ctxCanvas1.lineTo(100, 75);
-        ctxCanvas1.lineTo(100, 25);
-        ctxCanvas1.fill();
+        ctxCanvas1.arc(75, 75, 50, 0, Math.PI * 2, true);
+        
+        ctxCanvas1.moveTo(110, 75);
+        ctxCanvas1.arc(75, 75, 35, 0, Math.PI, false)
+
+        ctxCanvas1.moveTo(65, 65);
+        ctxCanvas1.arc(60, 65, 5, 0, Math.PI * 2, true)
+
+        ctxCanvas1.moveTo(95, 65);
+        ctxCanvas1.arc(90, 65, 5, 0, Math.PI * 2, true)
+
+
+        ctxCanvas1.stroke();
 
     };
 };
